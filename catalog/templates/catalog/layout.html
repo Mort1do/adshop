@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'vendor/css/layout.css' %}">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <h1>Название Магазина</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Видео</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
+        </nav>
+        <div class="account">
+            <img src="avatar.png" alt="Avatar">
+            <a href="#">Личный кабинет</a>
+        </div>
+    </header>
+
+    <!-- Основное содержимое страницы будет ниже -->
+    <main>
+        <!-- Здесь будет основной контент вашего интернет-магазина -->
+        {% block content %}{% endblock %}
+    </main>
+
+</body>
+</html>

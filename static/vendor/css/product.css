@@ -1,0 +1,36 @@
+.product-block {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.product-image img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-name {
+    font-size: 18px;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.seller-nickname {
+    font-size: 14px;
+    color: #666;
+    margin-top: 0;
+}

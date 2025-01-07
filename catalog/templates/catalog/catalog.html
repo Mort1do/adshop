@@ -1,0 +1,24 @@
+{% extends 'catalog/layout.html' %}
+{% load static %}
+
+{% block title %}Store - Каталог{% endblock %}
+
+{% block content %}
+
+        <link rel="stylesheet" href="{% static 'vendor/css/product.css' %}">
+
+        {% for product in products %}
+
+        <div class="product-block">
+                <div class="product-image">
+                        <img src="{{ product.image.url }}" alt="Product Image">
+                </div>
+                <div class="product-info">
+                        <h3 class="product-name">{{ product.name }}</h3>
+                        <p class="seller-nickname">Добавил: {{ product.creator }}</p>
+                </div>
+        </div>
+
+        {% endfor %}
+
+{% endblock %}
